@@ -1,0 +1,190 @@
+body {
+  margin: 0em;
+  color: black;
+}
+
+.cont-temporizador {
+}
+
+.cont-temporizador .bloque {
+  margin: 0px 4px;
+  display: flex;
+  align-items: center;
+}
+
+.cont-temporizador .bloque div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  box-shadow: 0 0 6px 2px #727272 inset;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100px;
+  height: 70px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.btn-empezar {
+  background-color: #9c8165;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-empezar::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotate(45deg);
+  animation: raytracing 2s linear infinite;
+}
+
+@keyframes raytracing {
+  0% {
+    transform: rotate(45deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(50%, 50%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes raytracing {
+  0% {
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(45deg) translate(150%, 150%);
+  }
+}
+
+
+.nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.cont-temporizador .bloque p {
+  font-size: 11px;
+  font-weight: bold;
+  color: black;
+}
+
+.cover {
+  height: 400px;
+  background-image: url(https://i.pinimg.com/originals/cb/a7/d0/cba7d0274e75b5fd2fed2ad9ffb742c8.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen2 {
+  height: 400px;
+  margin-bottom: 25px;
+  background-image: url(https://pbs.twimg.com/media/FIvnjW3UUAAYv-R?format=jpg&name=4096x4096);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen4 {
+  height: 400px;
+  margin-bottom: 25px;
+  background-image: url(https://madisonmovie.files.wordpress.com/2015/09/moonrise-kingdom-lighthouse.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  -webkit-animation: cambio 20s infinite alternate linear;
+  animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@-webkit-keyframes cambio {
+  0% {
+      margin-left: 0;
+  }
+  20% {
+      margin-left: 0;
+  }
+  25% {
+      margin-left: -100%;
+  }
+  45% {
+      margin-left: -100%;
+  }
+  50% {
+      margin-left: -200%;
+  }
+  70% {
+      margin-left: -200%;
+  }
+  75% {
+      margin-left: -300%;
+  }
+  100% {
+      margin-left: -300%;
+  }
+}
+
+@keyframes cambio {
+  0% {
+      margin-left: 0;
+  }
+  20% {
+      margin-left: 0;
+  }
+  25% {
+      margin-left: -100%;
+  }
+  45% {
+      margin-left: -100%;
+  }
+  50% {
+      margin-left: -200%;
+  }
+  70% {
+      margin-left: -200%;
+  }
+  75% {
+      margin-left: -300%;
+  }
+  100% {
+      margin-left: -300%;
+  }
+}

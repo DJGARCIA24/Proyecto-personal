@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Frelia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(222, 200, 179);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+        }
+
+        .cont-temporizador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .bloque {
+            text-align: center;
+            margin: 0 10px;
+            margin-bottom: 20px;
+        }
+
+        .bloque p {
+            margin: 0;
+        }
+
+        .bloque div {
+            font-size: 36px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .titulo h1 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Galeria</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="cover d-flex justify-content-center align-items flex-colum"> 
+        </div>
+        <center><a class="btn btn-empezar" href="pagina2.html" role="button">Empezar</a></center>
+        <div class="titulo">
+            <h1>Tiempo restante para 'Speak Now' (Taylor's Version)</h1>
+        </div>
+        <div class="cont-temporizador">     
+            <div class="bloque">    
+                <div class="dias" id="dias">00</div> 
+                <p>Días</p>    
+            </div>
+            <div class="bloque">    
+                <div class="horas" id="horas">--</div> 
+                <p>Horas</p> 
+            </div>  
+            <div class="bloque">    
+                <div class="minutos" id="minutos">--</div> 
+                <p>Minutos</p> 
+            </div>  
+            <div class="bloque">    
+                <div class="segundos" id="segundos">--</div> 
+                <p>Segundos</p> 
+            </div>
+        </div> 
+        <script src="app.js"></script>   
+    </header>
+</body>
+</html>
